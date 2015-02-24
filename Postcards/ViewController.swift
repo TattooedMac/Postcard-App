@@ -32,6 +32,8 @@ class ViewController: UIViewController {
         //Code will evaluate when we press the button.
         //Adding a comment here to test github.
         //Comment to check my remote updating.
+        //Comment to check my remote updating 2 times
+        
         
         messageLabel.hidden = false
         messageLabel.text = enterMessageTextField.text
