@@ -25,12 +25,15 @@
                                     <rect key="frame" x="16" y="84" width="290" height="84"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vPl-65-wAT">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfq-bV-B4D">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="190" y="176" width="116" height="82"/>
+                                    <rect key="frame" x="16" y="176" width="166" height="44"/>
                                 </variation>
-                            </imageView>
+                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q28-Eo-Y14">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -61,24 +64,32 @@
                                     <action selector="sendMailButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rhv-u8-8Di"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vPl-65-wAT">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="190" y="176" width="116" height="82"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="x0F-KL-ph9"/>
-                                <exclude reference="vPl-65-wAT"/>
+                                <exclude reference="hfq-bV-B4D"/>
                                 <exclude reference="q28-Eo-Y14"/>
                                 <exclude reference="vcW-oe-mSI"/>
                                 <exclude reference="oeg-EA-R8r"/>
+                                <exclude reference="vPl-65-wAT"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="x0F-KL-ph9"/>
-                                <include reference="vPl-65-wAT"/>
+                                <include reference="hfq-bV-B4D"/>
                                 <include reference="q28-Eo-Y14"/>
                                 <include reference="vcW-oe-mSI"/>
                                 <include reference="oeg-EA-R8r"/>
+                                <include reference="vPl-65-wAT"/>
                             </mask>
                         </variation>
                     </view>
@@ -87,6 +98,7 @@
                         <outlet property="enterNameTextField" destination="q28-Eo-Y14" id="5SE-9w-Vts"/>
                         <outlet property="mailButton" destination="oeg-EA-R8r" id="S2S-Ia-pxn"/>
                         <outlet property="messageLabel" destination="x0F-KL-ph9" id="kbk-Pi-fay"/>
+                        <outlet property="nameLabel" destination="hfq-bV-B4D" id="wvg-Pb-hnl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
