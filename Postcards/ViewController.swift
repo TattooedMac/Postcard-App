@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         //Adding a comment here to test github.
         //Comment to check my remote updating.
         //Comment to check my remote updating 2 times
-        
+        //Yet another comment to see what happens. 
         
         messageLabel.hidden = false
         messageLabel.text = enterMessageTextField.text
